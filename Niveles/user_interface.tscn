@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd5bf3hyxl73g"]
+
+[ext_resource type="Script" path="res://Niveles/user_interface.gd" id="1_3ej4n"]
+
+[node name="UserInterface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3ej4n")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 0.999939
+offset_top = 1.99997
+offset_right = 183.0
+offset_bottom = 42.0
+scale = Vector2(0.9375, 0.815789)
+text = "0 Pts"

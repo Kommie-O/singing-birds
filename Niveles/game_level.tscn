@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://4b62e0mpwvoh"]
+
+[ext_resource type="PackedScene" uid="uid://waarksxb61qx" path="res://Objetos/key_listeners.tscn" id="1_2y6cm"]
+[ext_resource type="PackedScene" uid="uid://dd5bf3hyxl73g" path="res://Niveles/user_interface.tscn" id="2_p6o4l"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="KeyListeners" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(-180, 280)
+scale = Vector2(1.059, 1)
+hframes = 4
+vframes = 3
+key_name = "button_A"
+
+[node name="KeyListeners2" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(-70, 280)
+scale = Vector2(1.067, 1)
+hframes = 4
+vframes = 3
+frame = 1
+key_name = "button_S"
+
+[node name="KeyListeners3" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(180, 280)
+scale = Vector2(1.067, 1)
+hframes = 4
+vframes = 3
+frame = 2
+key_name = "button_F"
+
+[node name="KeyListeners4" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(70, 280)
+scale = Vector2(1.067, 1)
+hframes = 4
+vframes = 3
+frame = 3
+key_name = "button_D"
+
+[node name="UserInterface" parent="." instance=ExtResource("2_p6o4l")]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
