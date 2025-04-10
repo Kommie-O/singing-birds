@@ -41,6 +41,9 @@ func _process(delta):
 				Senales.IncrementScore.emit (good_press_score)
 			elif distace_from_pass < ok_press_threshold:
 				Senales.IncrementScore.emit (ok_press_score)
+			else:
+				pass
+			
 			
 			key_to_pop.queue_free()
 		
