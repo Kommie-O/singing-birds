@@ -1,16 +1,26 @@
 [gd_scene load_steps=3 format=3 uid="uid://waarksxb61qx"]
 
 [ext_resource type="Texture2D" uid="uid://cs2ups5plsb5p" path="res://Arte/flechas (1).webp" id="1_sc3li"]
-[ext_resource type="Script" path="res://Objetos/key_listeners.gd" id="2_niuhl"]
+[ext_resource type="Script" uid="uid://dkiayfuudd4x1" path="res://Objetos/key_listeners.gd" id="2_niuhl"]
 
 [node name="KeyListeners" type="Sprite2D"]
-position = Vector2(856, 259)
+position = Vector2(862, 262)
 scale = Vector2(0.39, 0.375)
 texture = ExtResource("1_sc3li")
+hframes = 4
+vframes = 3
 script = ExtResource("2_niuhl")
 
 [node name="RandomSpawnTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
+
+[node name="Glow Overlay" type="Sprite2D" parent="."]
+modulate = Color(1.3, 1.3, 1.3, 1)
+position = Vector2(-5.12824, 31.9999)
+texture = ExtResource("1_sc3li")
+hframes = 4
+vframes = 3
+frame = 4
 
 [connection signal="timeout" from="RandomSpawnTimer" to="." method="_on_random_spawn_timer_timeout"]

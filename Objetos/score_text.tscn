@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b17ik6sfqyf7h"]
 
-[ext_resource type="Script" path="res://Objetos/score_text.gd" id="1_dn06m"]
-[ext_resource type="FontFile" uid="uid://dfy5yijwwuesr" path="res://Arte/VTCFuzzypunkyslippers.ttf" id="2_aar7p"]
+[ext_resource type="Script" uid="uid://bgvubg61y5mi8" path="res://Objetos/score_text.gd" id="1_dn06m"]
+[ext_resource type="FontFile" uid="uid://vu4pqju7rd4f" path="res://Arte/Milonga-Regular.ttf" id="2_ris00"]
 
 [sub_resource type="Animation" id="Animation_mrp0v"]
 resource_name = "Fall"
@@ -9,7 +9,7 @@ length = 0.24
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("RichTextLabel:modulate")
+tracks/0/path = NodePath("ScoreLevelText:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -21,7 +21,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("RichTextLabel:position")
+tracks/1/path = NodePath("ScoreLevelText:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -50,7 +50,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("RichTextLabel:modulate")
+tracks/0/path = NodePath("ScoreLevelText:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -62,7 +62,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("RichTextLabel:position")
+tracks/1/path = NodePath("ScoreLevelText:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -74,8 +74,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8pr7a"]
 _data = {
-"Fall": SubResource("Animation_mrp0v"),
-"RESET": SubResource("Animation_wuc5e")
+&"Fall": SubResource("Animation_mrp0v"),
+&"RESET": SubResource("Animation_wuc5e")
 }
 
 [node name="ScoreText" type="Control"]
@@ -89,15 +89,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dn06m")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="ScoreLevelText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_top = 1.0
-offset_right = 179.0
-offset_bottom = 30.0
-theme_override_colors/default_color = Color(0.772549, 0.513726, 0.00392157, 1)
+offset_left = -94.0
+offset_right = 85.0
+offset_bottom = 29.0
+theme_override_colors/default_color = Color(0.631277, 0.271223, 0.315276, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
-theme_override_fonts/normal_font = ExtResource("2_aar7p")
+theme_override_fonts/normal_font = ExtResource("2_ris00")
 theme_override_font_sizes/normal_font_size = 28
 bbcode_enabled = true
 text = "[center]PERFECTO![/center]"
@@ -105,6 +105,6 @@ scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_8pr7a")
+&"": SubResource("AnimationLibrary_8pr7a")
 }
 autoplay = "Fall"

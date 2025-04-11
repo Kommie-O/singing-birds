@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bm16onstyj18k"]
 
 [ext_resource type="Texture2D" uid="uid://cs2ups5plsb5p" path="res://Arte/flechas (1).webp" id="1_14wjf"]
-[ext_resource type="Script" path="res://Objetos/falling_key.gd" id="2_oyvrl"]
+[ext_resource type="Script" uid="uid://ly8v6cyub3je" path="res://Objetos/falling_key.gd" id="2_oyvrl"]
 
 [node name="Control" type="Sprite2D"]
 scale = Vector2(0.4, 0.4)
