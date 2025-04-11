@@ -91,9 +91,9 @@ script = ExtResource("1_dn06m")
 
 [node name="ScoreLevelText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = -94.0
-offset_right = 85.0
-offset_bottom = 29.0
+offset_top = 1.0
+offset_right = 179.0
+offset_bottom = 30.0
 theme_override_colors/default_color = Color(0.631277, 0.271223, 0.315276, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
