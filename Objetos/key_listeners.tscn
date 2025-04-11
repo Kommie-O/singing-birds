@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://waarksxb61qx"]
 
-[ext_resource type="Texture2D" uid="uid://chwquhfwt1a6c" path="res://Arte/arrows.webp" id="1_tcyjr"]
+[ext_resource type="Texture2D" uid="uid://cs2ups5plsb5p" path="res://Arte/flechas (1).webp" id="1_sc3li"]
 [ext_resource type="Script" path="res://Objetos/key_listeners.gd" id="2_niuhl"]
 
 [node name="KeyListeners" type="Sprite2D"]
-position = Vector2(721, 360)
-texture = ExtResource("1_tcyjr")
+position = Vector2(856, 259)
+scale = Vector2(0.39, 0.375)
+texture = ExtResource("1_sc3li")
 script = ExtResource("2_niuhl")
 
 [node name="RandomSpawnTimer" type="Timer" parent="."]

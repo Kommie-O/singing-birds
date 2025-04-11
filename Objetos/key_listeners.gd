@@ -1,6 +1,7 @@
 extends Sprite2D
 
 @onready var falling_key = preload("res://Objetos/falling_key.tscn")
+@onready var score_text = preload("res://Objetos/score_text.tscn")
 @export var key_name: String = "" 
 
 var falling_key_queue = []
@@ -30,22 +31,36 @@ func _process(delta):
 		# Si la apretaron, calcular distancie
 		if Input.is_action_just_pressed(key_name):
 			var key_to_pop = falling_key_queue.pop_front()
+			if key_to_pop != null:
+				var distace_from_pass = abs(key_to_pop.pass_threshold - key_to_pop.global_position.y)
+				if distace_from_pass !=null:
+					if distace_from_pass < perfect_press_threshold:
+						Senales.IncrementScore.emit(perfect_press_score)
+					elif distace_from_pass < great_press_threshold:
+						Senales.IncrementScore.emit (great_press_score)
+					elif distace_from_pass < good_pres_threshold:
+						Senales.IncrementScore.emit (good_press_score)
+					elif distace_from_pass < ok_press_threshold:
+						Senales.IncrementScore.emit (ok_press_score)
+					else:
+						pass
+				
 			
-			var distace_from_pass = abs(key_to_pop.pass_threshold - key_to_pop.global_position.y)
+				
 			
-			if distace_from_pass < perfect_press_threshold:
-				Senales.IncrementScore.emit(perfect_press_score)
-			elif distace_from_pass < great_press_threshold:
-				Senales.IncrementScore.emit (great_press_score)
-			elif distace_from_pass < good_pres_threshold:
-				Senales.IncrementScore.emit (good_press_score)
-			elif distace_from_pass < ok_press_threshold:
-				Senales.IncrementScore.emit (ok_press_score)
-			else:
-				pass
+				
+			
+			
+			
+			
+			
 			
 			
 			key_to_pop.queue_free()
+			
+			var st_inst = score_text.instantiate()
+			get_tree().get_root().call_deferred("add_child", st_inst)
+			st_inst.global_position = global_position
 		
 func CreateFallingKey():
 	var Fk_inst = falling_key.instantiate()

@@ -8,31 +8,31 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="KeyListeners" parent="." instance=ExtResource("1_2y6cm")]
-position = Vector2(-180, 280)
-scale = Vector2(1.059, 1)
+position = Vector2(-275, 270)
+scale = Vector2(0.4, 0.372)
 hframes = 4
 vframes = 3
 key_name = "button_A"
 
 [node name="KeyListeners2" parent="." instance=ExtResource("1_2y6cm")]
-position = Vector2(-70, 280)
-scale = Vector2(1.067, 1)
+position = Vector2(-49, 270)
+scale = Vector2(0.4, 0.375)
 hframes = 4
 vframes = 3
 frame = 1
 key_name = "button_S"
 
 [node name="KeyListeners3" parent="." instance=ExtResource("1_2y6cm")]
-position = Vector2(180, 280)
-scale = Vector2(1.067, 1)
+position = Vector2(379.316, 270)
+scale = Vector2(0.4, 0.372)
 hframes = 4
 vframes = 3
 frame = 2
 key_name = "button_F"
 
 [node name="KeyListeners4" parent="." instance=ExtResource("1_2y6cm")]
-position = Vector2(70, 280)
-scale = Vector2(1.067, 1)
+position = Vector2(165, 270)
+scale = Vector2(0.4, 0.375)
 hframes = 4
 vframes = 3
 frame = 3
