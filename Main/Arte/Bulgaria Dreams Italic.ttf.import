@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dg2ix814xxvxg"
-path="res://.godot/imported/Octin Vintage B Rg.otf-6767dcaf86f2728d6761012d007a3536.fontdata"
+uid="uid://k82n3l6kregk"
+path="res://.godot/imported/Bulgaria Dreams Italic.ttf-3d7a1b34026f33a700b1c39ba1a113b8.fontdata"
 
 [deps]
 
-source_file="res://Arte/Octin Vintage B Rg.otf"
-dest_files=["res://.godot/imported/Octin Vintage B Rg.otf-6767dcaf86f2728d6761012d007a3536.fontdata"]
+source_file="res://Main/Arte/Bulgaria Dreams Italic.ttf"
+dest_files=["res://.godot/imported/Bulgaria Dreams Italic.ttf-3d7a1b34026f33a700b1c39ba1a113b8.fontdata"]
 
 [params]
 

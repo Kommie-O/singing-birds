@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2icnho5s1voo"
-path="res://.godot/imported/rappampanos.png-f8eb9bdd26c2500d02a423ebd1202ab0.ctex"
+path="res://.godot/imported/rappampanos.png-062216b5e782ebb49a46ed51081f4f85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/rappampanos.png"
-dest_files=["res://.godot/imported/rappampanos.png-f8eb9bdd26c2500d02a423ebd1202ab0.ctex"]
+source_file="res://Main/Arte/rappampanos.png"
+dest_files=["res://.godot/imported/rappampanos.png-062216b5e782ebb49a46ed51081f4f85.ctex"]
 
 [params]
 

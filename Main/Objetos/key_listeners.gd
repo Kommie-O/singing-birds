@@ -1,7 +1,7 @@
 extends Sprite2D
 
-@onready var falling_key = preload("res://Objetos/falling_key.tscn")
-@onready var score_text = preload("res://Objetos/score_text.tscn")
+@onready var falling_key = preload("res://Main/Objetos/falling_key.tscn")
+@onready var score_text = preload("res://Main/Objetos/score_text.tscn")
 @export var key_name: String = "" 
 
 var falling_key_queue = []

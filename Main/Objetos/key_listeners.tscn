@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://waarksxb61qx"]
 
-[ext_resource type="Texture2D" uid="uid://cs2ups5plsb5p" path="res://Arte/flechas (1).webp" id="1_sc3li"]
-[ext_resource type="Script" uid="uid://dkiayfuudd4x1" path="res://Objetos/key_listeners.gd" id="2_niuhl"]
+[ext_resource type="Texture2D" uid="uid://cs2ups5plsb5p" path="res://Main/Arte/flechas (1).webp" id="1_sc3li"]
+[ext_resource type="Script" uid="uid://dkiayfuudd4x1" path="res://Main/Objetos/key_listeners.gd" id="2_niuhl"]
 
 [sub_resource type="Animation" id="Animation_w40pl"]
 resource_name = "Clicked"

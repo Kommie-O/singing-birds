@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3jhleqeuhnru"
-path="res://.godot/imported/wea_rapida_2.png-0f04d6506e7f89dfdbe55870f8dd3406.ctex"
+uid="uid://7xext87e07a8"
+path="res://.godot/imported/play (1).png-2f87a40271d50332eec85bf8ec97c0fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/wea_rapida_2.png"
-dest_files=["res://.godot/imported/wea_rapida_2.png-0f04d6506e7f89dfdbe55870f8dd3406.ctex"]
+source_file="res://Main/Arte/play (1).png"
+dest_files=["res://.godot/imported/play (1).png-2f87a40271d50332eec85bf8ec97c0fb.ctex"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://vu4pqju7rd4f"
-path="res://.godot/imported/Milonga-Regular.ttf-04d8c6b385cae1f24cde6e15b8f6ddd0.fontdata"
+uid="uid://dg2ix814xxvxg"
+path="res://.godot/imported/Octin Vintage B Rg.otf-7603938044810766c050e504157239f9.fontdata"
 
 [deps]
 
-source_file="res://Arte/Milonga-Regular.ttf"
-dest_files=["res://.godot/imported/Milonga-Regular.ttf-04d8c6b385cae1f24cde6e15b8f6ddd0.fontdata"]
+source_file="res://Main/Arte/Octin Vintage B Rg.otf"
+dest_files=["res://.godot/imported/Octin Vintage B Rg.otf-7603938044810766c050e504157239f9.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=4
+subpixel_positioning=1
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

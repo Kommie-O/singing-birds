@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dpbtat40gpumx"
-path="res://.godot/imported/Argentina Austral_ free promo.ttf-8b024915198d5ff4975149aacf89fdc5.fontdata"
+uid="uid://doejugodcvyln"
+path="res://.godot/imported/Beautify Script.otf-2cf47242c499c31bf9044de911bd7ec5.fontdata"
 
 [deps]
 
-source_file="res://Arte/Argentina Austral_ free promo.ttf"
-dest_files=["res://.godot/imported/Argentina Austral_ free promo.ttf-8b024915198d5ff4975149aacf89fdc5.fontdata"]
+source_file="res://Main/Arte/Beautify Script.otf"
+dest_files=["res://.godot/imported/Beautify Script.otf-2cf47242c499c31bf9044de911bd7ec5.fontdata"]
 
 [params]
 

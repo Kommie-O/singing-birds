@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://doejugodcvyln"
-path="res://.godot/imported/Beautify Script.otf-83e6396523a6782aff31660362c3194b.fontdata"
+uid="uid://vu4pqju7rd4f"
+path="res://.godot/imported/Milonga-Regular.ttf-042f0543f59a2728beb78931c3c92259.fontdata"
 
 [deps]
 
-source_file="res://Arte/Beautify Script.otf"
-dest_files=["res://.godot/imported/Beautify Script.otf-83e6396523a6782aff31660362c3194b.fontdata"]
+source_file="res://Main/Arte/Milonga-Regular.ttf"
+dest_files=["res://.godot/imported/Milonga-Regular.ttf-042f0543f59a2728beb78931c3c92259.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

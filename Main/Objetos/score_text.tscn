@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b17ik6sfqyf7h"]
 
-[ext_resource type="Script" uid="uid://bgvubg61y5mi8" path="res://Objetos/score_text.gd" id="1_dn06m"]
-[ext_resource type="FontFile" uid="uid://vu4pqju7rd4f" path="res://Arte/Milonga-Regular.ttf" id="2_ris00"]
+[ext_resource type="Script" uid="uid://bgvubg61y5mi8" path="res://Main/Objetos/score_text.gd" id="1_dn06m"]
+[ext_resource type="FontFile" uid="uid://vu4pqju7rd4f" path="res://Main/Arte/Milonga-Regular.ttf" id="2_ris00"]
 
 [sub_resource type="Animation" id="Animation_mrp0v"]
 resource_name = "Fall"

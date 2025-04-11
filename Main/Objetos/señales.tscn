@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cmsfbsbfninu1"]
 
-[ext_resource type="Script" uid="uid://cc524jgdavqcu" path="res://Objetos/señales.gd" id="1_488w0"]
+[ext_resource type="Script" uid="uid://cc524jgdavqcu" path="res://Main/Objetos/señales.gd" id="1_488w0"]
 
 [node name="Señales" type="Node2D"]
 script = ExtResource("1_488w0")

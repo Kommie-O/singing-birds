@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chwquhfwt1a6c"
-path="res://.godot/imported/arrows.webp-36d978513dd33906dc0e4ee2536b2ad2.ctex"
+uid="uid://c4t5xl3ghtagy"
+path="res://.godot/imported/flechas.webp-2ec295bd038d173e85c445ac0e908cd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/arrows.webp"
-dest_files=["res://.godot/imported/arrows.webp-36d978513dd33906dc0e4ee2536b2ad2.ctex"]
+source_file="res://Main/Arte/flechas.webp"
+dest_files=["res://.godot/imported/flechas.webp-2ec295bd038d173e85c445ac0e908cd0.ctex"]
 
 [params]
 

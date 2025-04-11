@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c52kb25gn6m8u"
-path="res://.godot/imported/teclas.png-3c10c92f3b1da1615ac11af827578f81.ctex"
+uid="uid://cs2ups5plsb5p"
+path="res://.godot/imported/flechas (1).webp-409577126b2cd8ecb009f9cb86514ee8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/teclas.png"
-dest_files=["res://.godot/imported/teclas.png-3c10c92f3b1da1615ac11af827578f81.ctex"]
+source_file="res://Main/Arte/flechas (1).webp"
+dest_files=["res://.godot/imported/flechas (1).webp-409577126b2cd8ecb009f9cb86514ee8.ctex"]
 
 [params]
 

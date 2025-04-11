@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dfy5yijwwuesr"
-path="res://.godot/imported/VTCFuzzypunkyslippers.ttf-25dda0d96a2b980b79441d37a5839be3.fontdata"
+path="res://.godot/imported/VTCFuzzypunkyslippers.ttf-3da82372ce03aaff2ce4743b61d35dc0.fontdata"
 
 [deps]
 
-source_file="res://Arte/VTCFuzzypunkyslippers.ttf"
-dest_files=["res://.godot/imported/VTCFuzzypunkyslippers.ttf-25dda0d96a2b980b79441d37a5839be3.fontdata"]
+source_file="res://Main/Arte/VTCFuzzypunkyslippers.ttf"
+dest_files=["res://.godot/imported/VTCFuzzypunkyslippers.ttf-3da82372ce03aaff2ce4743b61d35dc0.fontdata"]
 
 [params]
 

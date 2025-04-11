@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="Singing Birds"
+run/main_scene="uid://hqk3uquo3a6d"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Senales="*res://Objetos/señales.tscn"
+Senales="*res://Main/Objetos/señales.tscn"
 
 [input]
 

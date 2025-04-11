@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://k82n3l6kregk"
-path="res://.godot/imported/Bulgaria Dreams Italic.ttf-827f6b6670b27d13915b0f76f23dd016.fontdata"
+uid="uid://t40iapgf7urp"
+path="res://.godot/imported/Argentina.ttf-64345000a440983e3db9d442d1a2a43b.fontdata"
 
 [deps]
 
-source_file="res://Arte/Bulgaria Dreams Italic.ttf"
-dest_files=["res://.godot/imported/Bulgaria Dreams Italic.ttf-827f6b6670b27d13915b0f76f23dd016.fontdata"]
+source_file="res://Main/Arte/Argentina.ttf"
+dest_files=["res://.godot/imported/Argentina.ttf-64345000a440983e3db9d442d1a2a43b.fontdata"]
 
 [params]
 

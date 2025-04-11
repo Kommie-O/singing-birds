@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://4b62e0mpwvoh"]
 
-[ext_resource type="PackedScene" uid="uid://waarksxb61qx" path="res://Objetos/key_listeners.tscn" id="1_2y6cm"]
-[ext_resource type="Texture2D" uid="uid://3jhleqeuhnru" path="res://Arte/wea_rapida_2.png" id="1_gl36h"]
-[ext_resource type="PackedScene" uid="uid://dd5bf3hyxl73g" path="res://Niveles/user_interface.tscn" id="2_p6o4l"]
+[ext_resource type="PackedScene" uid="uid://waarksxb61qx" path="res://Main/Objetos/key_listeners.tscn" id="1_2y6cm"]
+[ext_resource type="Texture2D" uid="uid://3jhleqeuhnru" path="res://Main/Arte/wea_rapida_2.png" id="1_gl36h"]
+[ext_resource type="PackedScene" uid="uid://dd5bf3hyxl73g" path="res://Main/Niveles/user_interface.tscn" id="2_p6o4l"]
 
 [node name="GameLevel" type="Node2D"]
 
