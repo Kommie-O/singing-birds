@@ -18,9 +18,15 @@ var ok_press_score:float = 50
 
 func _ready():
 	$"Glow Overlay".frame = frame + 4
+	Senales.CreateFallingKey.connect(CreateFallingKey)
 
 
 func _process(delta):
+	
+	if Input.is_action_just_pressed(key_name):
+		Senales.KeyListenerPress.emit(key_name, frame)
+	
+	
 	# Asegurarse de que haya una Key para presionar
 	if falling_key_queue.size() > 0:
 		
@@ -85,15 +91,21 @@ func _process(delta):
 			st_inst.SetTextInfo(press_score_text)
 			st_inst.global_position = global_position + Vector2(0, -20)
 		
-func CreateFallingKey():
-	var Fk_inst = falling_key.instantiate()
-	get_tree().get_root().call_deferred("add_child", Fk_inst)
-	Fk_inst.Setup(position.x, frame + 4)
+func CreateFallingKey(button_name: String):
+	if button_name == key_name:
+		var Fk_inst = falling_key.instantiate()
+		get_tree().get_root().call_deferred("add_child", Fk_inst)
+		Fk_inst.Setup(position.x, frame + 4)
+		
+		falling_key_queue.push_back(Fk_inst)
 	
-	falling_key_queue.push_back(Fk_inst)
+	
+	
+	
+	
 
 
 func _on_random_spawn_timer_timeout() -> void:
-	CreateFallingKey()
+	# CreateFallingKey()
 	$RandomSpawnTimer.wait_time = randf_range(0.4, 3)
 	$RandomSpawnTimer.start()
