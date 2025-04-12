@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://4b62e0mpwvoh"]
+
+[ext_resource type="PackedScene" uid="uid://waarksxb61qx" path="res://Main/Objetos/key_listeners.tscn" id="1_2y6cm"]
+[ext_resource type="Texture2D" uid="uid://3jhleqeuhnru" path="res://Main/Arte/wea_rapida_2.png" id="1_gl36h"]
+[ext_resource type="PackedScene" uid="uid://dd5bf3hyxl73g" path="res://Main/Niveles/user_interface.tscn" id="2_p6o4l"]
+[ext_resource type="PackedScene" uid="uid://cteqfm5ohljt4" path="res://Main/Objetos/level_editor.tscn" id="4_utu6h"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(2.5, 2.25002)
+scale = Vector2(0.302344, 0.311343)
+texture = ExtResource("1_gl36h")
+
+[node name="KeyListeners" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(-275, 270)
+scale = Vector2(0.4, 0.372)
+key_name = "button_A"
+
+[node name="KeyListeners2" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(-49, 270)
+scale = Vector2(0.4, 0.375)
+frame = 1
+key_name = "button_S"
+
+[node name="KeyListeners3" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(379.316, 270)
+scale = Vector2(0.4, 0.372)
+frame = 2
+key_name = "button_F"
+
+[node name="KeyListeners4" parent="." instance=ExtResource("1_2y6cm")]
+position = Vector2(165, 270)
+scale = Vector2(0.4, 0.375)
+frame = 3
+key_name = "button_D"
+
+[node name="UserInterface" parent="." instance=ExtResource("2_p6o4l")]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+
+[node name="LevelEditor" parent="." instance=ExtResource("4_utu6h")]

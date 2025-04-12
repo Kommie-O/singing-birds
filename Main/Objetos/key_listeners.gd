@@ -93,11 +93,11 @@ func _process(delta):
 		
 func CreateFallingKey(button_name: String):
 	if button_name == key_name:
-		var Fk_inst = falling_key.instantiate()
-		get_tree().get_root().call_deferred("add_child", Fk_inst)
-		Fk_inst.Setup(position.x, frame + 4)
+		var fk_inst = falling_key.instantiate()
+		get_tree().get_root().call_deferred("add_child", fk_inst)
+		fk_inst.Setup(position.x, frame + 4)
 		
-		falling_key_queue.push_back(Fk_inst)
+		falling_key_queue.push_back(fk_inst)
 	
 	
 	
