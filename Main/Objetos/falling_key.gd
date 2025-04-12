@@ -10,7 +10,7 @@ var pass_threshold = 300.0
 func _init():
 	set_process(false)
 	
-func _process(delta): 
+func _process(_delta): 
 	global_position += Vector2(0, fall_speed)
 	
 	

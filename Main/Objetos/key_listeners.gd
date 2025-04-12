@@ -43,7 +43,6 @@ func _process(delta):
 		if Input.is_action_just_pressed(key_name):
 			var key_to_pop = falling_key_queue.pop_front()
 			var press_score_text: String = ""
-			$KeyFade.stop
 			$KeyFade.play("Clicked")
 			if key_to_pop != null:
 				var distace_from_pass = abs(key_to_pop.pass_threshold - key_to_pop.global_position.y)
