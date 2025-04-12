@@ -1,21 +1,26 @@
-[gd_scene load_steps=12 format=3 uid="uid://4b62e0mpwvoh"]
+[gd_scene load_steps=18 format=3 uid="uid://4b62e0mpwvoh"]
 
 [ext_resource type="PackedScene" uid="uid://waarksxb61qx" path="res://Main/Objetos/key_listeners.tscn" id="1_2y6cm"]
 [ext_resource type="Texture2D" uid="uid://3jhleqeuhnru" path="res://Main/Arte/wea_rapida_2.png" id="1_gl36h"]
-[ext_resource type="Texture2D" uid="uid://u6mysljn03yc" path="res://Main/Arte/placeholder animation.png" id="2_58g1k"]
+[ext_resource type="Texture2D" uid="uid://ern8g0adh5yg" path="res://Main/Arte/final-4-transp.webp" id="2_4xhdm"]
 [ext_resource type="PackedScene" uid="uid://dd5bf3hyxl73g" path="res://Main/Niveles/user_interface.tscn" id="2_p6o4l"]
-[ext_resource type="Texture2D" uid="uid://bh5cd3yxav0em" path="res://Main/Arte/placeholder animation abajo.png" id="3_6r1ax"]
-[ext_resource type="Texture2D" uid="uid://duc81waphwat4" path="res://Main/Arte/placeholder animation arriba.png" id="4_hj8xt"]
+[ext_resource type="Texture2D" uid="uid://cjinlsedaveqk" path="res://Main/Arte/final-0002 sin fondo.png" id="3_hj8xt"]
+[ext_resource type="Texture2D" uid="uid://f6pnbsmbwmyj" path="res://Main/Arte/final-1-transp.webp" id="4_07ros"]
 [ext_resource type="PackedScene" uid="uid://cteqfm5ohljt4" path="res://Main/Objetos/level_editor.tscn" id="4_utu6h"]
-[ext_resource type="Texture2D" uid="uid://cvmwfnkcetnl6" path="res://Main/Arte/placeholder animation derecha.png" id="5_efkpd"]
-[ext_resource type="Texture2D" uid="uid://xi1eenueh4dn" path="res://Main/Arte/placeholder animation izquierda.png" id="6_cln1g"]
+[ext_resource type="Texture2D" uid="uid://xkbepmo31jvt" path="res://Main/Arte/final-5-transp.webp" id="5_3ycfl"]
+[ext_resource type="Texture2D" uid="uid://bsfwui83wok4u" path="res://Main/Arte/final-2-transp.webp" id="6_fs2vm"]
 [ext_resource type="Script" uid="uid://cluaps210s5v4" path="res://Main/Niveles/animacion.gd" id="7_6r1ax"]
+[ext_resource type="Texture2D" uid="uid://dm8c5ejhm6rql" path="res://Main/Arte/lechuza4-transp.webp" id="8_8rpsq"]
+[ext_resource type="Texture2D" uid="uid://d0cnj8e7ekknu" path="res://Main/Arte/lechuza2-transp.webp" id="9_2up7d"]
+[ext_resource type="Texture2D" uid="uid://chh18v1vpwoy6" path="res://Main/Arte/lechuza3-transp.webp" id="10_doyyf"]
+[ext_resource type="Texture2D" uid="uid://ctylnjwa00s88" path="res://Main/Arte/lechuza5-transp.webp" id="11_g1mst"]
+[ext_resource type="Texture2D" uid="uid://mf7sert1tkd0" path="res://Main/Arte/lechuza1-transp.png" id="12_l4l7l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0kbh4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_6r1ax")
+"texture": ExtResource("2_4xhdm")
 }],
 "loop": true,
 "name": &"abajo",
@@ -23,7 +28,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_hj8xt")
+"texture": ExtResource("3_hj8xt")
 }],
 "loop": true,
 "name": &"arriba",
@@ -31,7 +36,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_efkpd")
+"texture": ExtResource("4_07ros")
 }],
 "loop": true,
 "name": &"derecha",
@@ -39,7 +44,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_cln1g")
+"texture": ExtResource("5_3ycfl")
 }],
 "loop": true,
 "name": &"izquierda",
@@ -47,7 +52,50 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_58g1k")
+"texture": ExtResource("6_fs2vm")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efkpd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_8rpsq")
+}],
+"loop": true,
+"name": &"abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_2up7d")
+}],
+"loop": true,
+"name": &"arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_doyyf")
+}],
+"loop": true,
+"name": &"derecha",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_g1mst")
+}],
+"loop": true,
+"name": &"izquierda",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_l4l7l")
 }],
 "loop": true,
 "name": &"normal",
@@ -64,9 +112,17 @@ scale = Vector2(0.302344, 0.311343)
 texture = ExtResource("1_gl36h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-407, 82)
+position = Vector2(427, 84)
 scale = Vector2(0.60992, 0.56988)
 sprite_frames = SubResource("SpriteFrames_0kbh4")
+animation = &"izquierda"
+frame_progress = 0.732602
+script = ExtResource("7_6r1ax")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-417, 79)
+scale = Vector2(0.593834, 0.610843)
+sprite_frames = SubResource("SpriteFrames_efkpd")
 animation = &"normal"
 script = ExtResource("7_6r1ax")
 
