@@ -212,7 +212,10 @@ var level_info = {
 , 89.3712463378906
 , 90.6831741333008
 , 92.7417221069336]]",
-		"music": load("res://Main/Musica/Music_Tango_150BPM_005.wav")
+		"music": load("res://Main/Musica/Music_Tango_150BPM_005.wav"),
+		"puteo": load("res://Main/Musica/Voice_Cheer_25-0_001.wav"),
+		"aplausos": load("res://Main/Musica/Voice_Cheer_75-25_001.wav"),
+		"felicito": load("res://Main/Musica/Voice_Cheer_100-75_001.wav")
 	}
 }
 
@@ -258,3 +261,12 @@ func SpawnFallingKey(button_name: String, delay: float):
 
 func _on_music_player_finished():
 	print(fk_output_arr)
+	if $"../UserInterface".score < 20500:
+		$Musica.stream = level_info.get(current_level_name).get("puteo")
+		$Musica.play()
+	elif $"../UserInterface".score < 61500:
+		$Musica.stream = level_info.get(current_level_name).get("aplausos")
+		$Musica.play()
+	else:
+		$Musica.stream = level_info.get(current_level_name).get("felicito")
+		$Musica.play()
